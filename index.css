@@ -1,1 +1,76 @@
-/* Le code CSS spécifique à la page d'accueil */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: Kameron;
+    color: #382213;
+}
+
+/*NAV*/
+nav{
+    display:flex;
+    font-family: Chango;
+    align-content: center;
+    justify-content: space-between;
+    background-color: beige;
+    padding: 5px;
+}
+
+nav h2{
+    margin: 0%;
+    padding: 0%;
+    font-size: 1.7em;
+}
+
+nav img{
+    height:50px;
+    width:60px;
+}
+
+#DocEtTel p{
+    font-family:Kameron;
+    font-size: 1.3em;
+    padding: 6px;
+    margin: 0;
+}
+
+#DocEtTel, #logoNom{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    color: #382213;
+}  
+
+button{
+    background-color: #382213;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+}
+
+
+/*HERO*/
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container iframe {
+  width: 120vw;
+  height: 120vh;
+  position: absolute;
+  top: -10vh;
+  left: -10vw;
+}
