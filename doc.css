@@ -119,6 +119,10 @@ a img{
     font-family: Chango;
 }
 
+.text {
+    font-size: large;
+}
+
 #Container-card-perso{
     display: flex;
     flex-direction: column;
@@ -148,7 +152,7 @@ a img{
 .card-but{
       display: flex;
     flex-direction: column;
-    font-size: x-large;
+    font-size: large;
     align-items: center;
     background-color: beige;
   width : 80vw;
@@ -157,3 +161,10 @@ a img{
     padding: 20px;
     margin-bottom: 30px;  
 }
+/*equipe*/
+
+#equipe h1{
+    font-family: Chango;
+    display: flex;
+}
+
