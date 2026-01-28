@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Carely - Page d'accueil</title>
+    <title>Carely - Landing Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
@@ -28,18 +27,18 @@
     <header>
       <div class="video-container">
         <iframe
-          src="https://www.youtube.com/embed/wyxxPTFfdi8?autoplay=1&mute=1&loop=1&playlist=wyxxPTFfdi8&controls=0&modestbranding=1&rel=0"
+          src="https://www.youtube.com/embed/-pAdX8tljVI?autoplay=1&mute=1&loop=1&playlist=-pAdX8tljVI&controls=0&modestbranding=1&rel=0"
           frameborder="0"
           allow="autoplay; fullscreen"
           allowfullscreen>
           Vidéo non disponible
         </iframe>
         <div class="content">
-          <img src="Img/HeroPhone.png" alt="phonephone">
+          <img id="HeroPhone" src="Img/HeroPhone.png" alt="phonephone">
           <div id="NameSlogant">
             <h1>CARELY</h1>
             <h2>CONCUE POUR LES <br>CERVEAUX QUI VONT VITES</h2>
-            <div>
+            <div id="buttons">
               <button><a href="https://www.apple.com/fr/app-store/">
             <p>Téléchargement</p><img src="/Img/PlayStore.png" alt="">
             </a></button>
@@ -53,37 +52,101 @@
     </header>
 
 
-
-
     
-    <!---Contexte chiffre clef-->
     <section id="contexte">
       <div id="textgauche">
-        <p><em class="textimportant">520 600</em>élèves en situation de handicap scolarisés dans les établissements scolaires </p>
+        <p><b class="textimportant">520 600</b> Elèves en situation de handicap<br> scolarisés dans les établissements scolaires </p>
       </div>
       <div id="textdroite">
         <div class="paragraphecontextechiffre">
-          <p class="textimportant">2 000</p>
-          <p>accompagnants d’élèves en situation de handicap (AESH) supplémentaires </p>
+          <p class="textimportant"><b>2 000</b></p>
+          <p>Accompagnants d’élèves en situation de handicap (AESH) supplémentaires </p>
         </div>
+        <div class="ligne"></div>
         <div class="paragraphecontextechiffre">
-          <p class="textimportant">480 000</p>
-          <p>livrets de parcours inclusif ouverts Troubles : Psy/dys/Devellopement Moteur </p>
+          <p class="textimportant"><b>480 000</b></p>
+          <p>Livrets de parcours inclusif ouverts Troubles : Psy/dys/Devellopement Moteur </p>
         </div>
+        <div class="ligne"></div>
         <div class="paragraphecontextechiffre">
-          <p class="textimportant">24 %</p>
-          <p>de la population âgée de plus de 16 ans présentait une forme de handicap, soit environ 107 millions de personnes</p>
+          <p class="textimportant"><b>24 %</b></p>
+          <p>De la population âgée de plus de 16 ans présentait une forme de handicap, soit environ 107 millions de personnes</p>
         </div>
-        
+      </div>
+    </section>
+
+    
+
+    <section id="IAs">
+      <h2>Nos Compagnons</h2>
+      <h3>Des présences pensées pour t’accompagner avec douceur</h3>
+      <div id="card-container">
+        <div class="card Charlie">
+          <img src="Img/Charlie.png" alt="">
+          <div class="text">
+            <h3>Charlie</h3>
+            <p>Amical.e et gai.e</p>
+          </div>
+        </div>
+        <div class="card Iris">
+          <img src="Img/Iris.png" alt="">
+          <div class="text">
+            <h3>Iris</h3>
+            <p>A l'écoute et attentionnée</p>
+          </div>
+        </div>
       </div>
 
+    </section>
+
+
+
+    <section id="Fonctionnalitées">
+      <h2>Nos Fonctionnalitées</h2>
+      <div>
+        <h3 class="top-left">Votre Carely vous accompagne</h3>
+        <h3 class="top-right">Apprenez en toute simplicité</h3>
+        <h3 class="bottom-left">Detendez-vous et soufflez avec votre Carely</h3>
+        <h3 class="bottom-right">Testez-vous avec nos quiz sur mesures</h3>
+      </div>
+    </section>
+
+
+
+    <section id="Témoignages">
+      <div class="carousel">
+        <!-- Avis -->
+        <div class="slide">
+          <h3>Marie Dupont</h3>
+          <div class="stars">★★★★★</div>
+          <p>"Service exceptionnel, très professionnel !"</p>
+        </div>
+        <div class="slide">
+          <h3>Jean Martin</h3>
+          <div class="stars">★★★★☆</div>
+          <p>"Produit de qualité, livraison rapide."</p>
+        </div>
+        <div class="slide">
+          <h3>Lisa Bernard</h3>
+          <div class="stars">★★★★★</div>
+          <p>"Très satisfaite, je recommande !"</p>
+        </div>
+
+        <!-- Flèches -->
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>   
 
     </section>
-    <section>
+
+
+
+    <section id="Download">
 
     </section>
     <footer>
-      
+      <p>©2026 - Carely by Group 3</p>
     </footer>
   </body>
+      <script src="script.js" type="text/javascript"></script>
 </html>

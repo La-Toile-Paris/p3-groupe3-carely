@@ -1,1 +1,159 @@
 /* Le code CSS spécifique à la page de documentation */
+
+a {
+    text-decoration: none;
+    color: #382213;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: Kameron;
+    color: #382213;
+}
+
+nav{
+    display:flex;
+    font-family: Chango;
+    align-content: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+}
+
+nav h2{
+    margin: 0%;
+    padding: 0%;
+    font-size: 1.7em;
+}
+
+nav img{
+    height:50px;
+    width:60px;
+}
+#DocEtTel p{
+    font-family:Kameron;
+    font-size: 1.3em;
+    padding: 6px;
+    margin: 0;
+}
+
+#DocEtTel, #logoNom{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}  
+
+button{
+    background-color: #382213;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 20px;
+}
+
+button p{
+    color: beige;
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 0%;
+}
+
+button a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+}
+
+a img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+#carely{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+}
+
+#carely p{
+    font-size: large;
+}
+.card{
+    background-color:beige;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 26%;
+    width: 26%;
+}
+#raison .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pourquoi{
+    font-size: x-large;
+    font-family: Chango;
+}
+
+#raison{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10%;
+}
+
+/*Persona*/
+#personna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#personna h1{
+    font-family: Chango;
+}
+
+#Container-card-perso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+}
+
+.card-perso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: beige;
+    width : 80vw;
+    height :35vh;
+    border-radius: 20px;
+    gap:20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.card-perso img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.card-but{
+      display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    align-items: center;
+    background-color: beige;
+  width : 80vw;
+    height :35vh;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;  
+}
