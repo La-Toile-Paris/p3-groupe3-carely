@@ -230,7 +230,16 @@ a img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+}
+
+#wireframe div{
+    display: flex;
+    gap:200px;
+}
+
+#wireframe div:last-child{
+    display: flex;
+    gap:100px;
 }
 
 #wireframe h1{
@@ -240,7 +249,7 @@ a img{
 }
 
 #wireframe img{
-    width: 80vw;
+    height: 500px;
     border: solid 2px rgba(255, 255, 255, 0.644);
     border-radius: 20px;
 }
