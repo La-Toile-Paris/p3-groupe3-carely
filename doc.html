@@ -8,6 +8,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="doc.css" rel="stylesheet" type="text/css" />
   <script src="script.js" type="text/javascript"></script>
+  <link rel="shortcut icon" href="Img/logoCarely.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chango&family=Kameron:wght@400..700&display=swap"
@@ -17,23 +18,28 @@
 <body>
   <nav>
     <div id="logoNom">
-      <img src="/p3-groupe3-carely/Img/logoCarely.png" alt="logo de Carely, un papillon brun bicolore">
+      <img src="/Img/logoCarely.png" alt="logo de Carely, un papillon brun bicolore">
+      <!--github : /p3-groupe3-carely/Img/logoCarely.png-->
       <h2>Carely</h2>
     </div>
     <div id="DocEtTel">
-      <p><a href="/index.html">Landingpage</a></p>
+      <p><a href="/index.html">Landing Page</a></p>
+      <!--github good : /p3-groupe3-carely/index.html-->
       <button><a href="https://www.figma.com/proto/hjIyraxqznZGkxGgZkD8dU/P3---Groupe-3?page-id=1%3A3&node-id=6093-2436&viewport=2322%2C-1048%2C0.43&t=F18wE2wpFf6AvCGF-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=6093%3A2458" target="_blank">
           <p>Télécharger</p>
         </a></button>
     </div>
   </nav>
   <section id="raison">
+    <div id="sujet">
+      <p>Le thème qui nous a été proposé était : <b>« Comment rendre l’éducation plus inclusive pour les élèves en situation de handicap ? »</b>. Pour y répondre, nous avons choisi de concevoir une application destinée à accompagner les étudiants atteintes de TDAH et/ou souffrant d’anxiété, afin de faciliter leur apprentissage, améliorer leur concentration et favoriser leur bien-être dans le cadre scolaire.</p>
+    </div>
     <div id="pourquoi">
       <h2>Pourquoi Carely ?</h2>
     </div>
     <div id="carely">
       <div class="card">
-        <p>🌿 <strong>Le constat</strong><br>
+        <p>🌿 <strong class="titre">Le constat</strong><br>
           Les études peuvent être difficiles lorsqu’on vit avec un TDAH ou de l’anxiété.
           Se concentrer, s’organiser, gérer le stress ou maintenir la motivation devient parfois un véritable défi au
           quotidien.
@@ -41,7 +47,7 @@
         </p>
       </div>
       <div class="card">
-        <p>🌱 <strong>La solution</strong> <br>
+        <p>🌱 <strong class="titre">La solution</strong> <br>
           Carely a été pensée pour accompagner les étudiant·e·s avec bienveillance et douceur.
           Grâce à nos intelligences artificielles, Charlie et Iris, l’application vous aide à vous concentrer, à vous
           apaiser et à réviser à votre rythme.
@@ -49,7 +55,7 @@
         </p>
       </div>
       <div class="card">
-        <p>🤍 <strong>Le soutien</strong> <br>
+        <p>🤍 <strong class="titre">Le soutien</strong> <br>
           Carely, ce n’est pas seulement une application, c’est aussi un espace de soutien.
           Vous avez accès à des ressources utiles, des centres d’aide et des professionnel·le·s de santé directement
           depuis l’application.
@@ -66,59 +72,111 @@
         <img src="Img/Carla2.jpg" alt="">
         <div class="text">
           <h3>Clara</h3>
-          <p>Qui ? Clara, 19 ans, étudiante en distanciel (CNED) après une rupture scolaire en Terminale. Elle vit avec
+          <p><b>Qui ?</b> Clara, 19 ans, étudiante en distanciel (CNED) après une rupture scolaire en Terminale. Elle vit avec
             un
-            Trouble Borderline et un TDAH non diagnostiqué.</br>
-            Où ? Dans sa chambre, son "quartier général". Elle est très présente sur les réseaux (Discord, TikTok) mais
-            isolée socialement dans la "vraie vie".</br>
-            Quand ? Surtout le soir (pics d'anxiété) ou lors de phases de crise/procrastination intense où elle perd
+            Trouble Borderline et un TDAH non diagnostiqué. </p>
+            <p><b>Où ?</b> Dans sa chambre, son "quartier général". Elle est très présente sur les réseaux (Discord, TikTok) mais
+            isolée socialement dans la "vraie vie".</p>
+            <p><b>Quand ?</b> Surtout le soir (pics d'anxiété) ou lors de phases de crise/procrastination intense où elle perd
             pied
-            avec ses objectifs.</br>
-            Pourquoi ? Elle cherche à comprendre ses propres mécanismes sans se sentir "malade" ou "anormale". Elle veut
+            avec ses objectifs. </p>
+            <p><b>Pourquoi ?</b> Elle cherche à comprendre ses propres mécanismes sans se sentir "malade" ou "anormale". Elle veut
             des outils pour gérer ses émotions en temps réel.</p>
         </div>
       </div>
-      <div class="card-but">
-        <p>
-        <h3>Ses besoins et frustrations</h3>
-        Ses frustration : Le sentiment que personne ne comprend l'effort colossal que représente une tâche simple (ex:
-        envoyer un mail) quand on a un blocage exécutif ou une dépression.</br>
-        Ses Besoin : Un suivi qui ne ressemble pas à un carnet de santé. Elle veut du design, de la gamification et de
-        la bienveillance.</br>
-        Ses Objectif : Stabiliser son humeur et briser le cycle de la honte lié à ses troubles (TOC, crises de
-        boulimie).</p>
-      </div>
+<section class="card-but">
+  <h3 class="section-title">Ses besoins & frustrations</h3>
+
+  <div class="besoins-container">
+
+    <div class="besoin-card">
+      <span class="besoin-tag">Frustration</span>
+      <p>
+        Le sentiment que personne ne comprend l’effort colossal que demandent
+        des tâches pourtant simples.<br><br>
+        <em>Envoyer un mail, répondre à un message…</em>
+      </p>
     </div>
+
+    <div class="besoin-card">
+      <span class="besoin-tag">Besoin</span>
+      <p>
+        Un suivi qui ne ressemble pas à un carnet de santé.<br><br>
+        Du design, de la gamification et surtout beaucoup de bienveillance.
+      </p>
+    </div>
+
+    <div class="besoin-card">
+      <span class="besoin-tag">Objectif</span>
+      <p>
+        Stabiliser son humeur et briser le cycle de la honte lié à ses troubles
+        (TOC, crises de boulimie).
+      </p>
+    </div>
+
+  </div>
+</section>
+  </section>
+  <section id="wireframe">
+    <h1>Wireframe</h1>
+<img src="/Maquette/TotalDebut.png" alt="">
+<img src="/Maquette/TotalFinal.png" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<div><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/hjIyraxqznZGkxGgZkD8dU/P3---Groupe-3?node-id=6093-2436&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=6093%3A2458&embed-host=share" allowfullscreen></iframe></div>
+  </section>
+  <section id="avenir">
+    <h1>Perspective d'avenir</h1>
+    <p>
+      - Nous aimerions créer le chemin avec Iris <br>
+    </p>
   </section>
   <section id="equipe">
     <div>
-      <h1>Nous</h1>
+      <h1>Notre équipe</h1>
     </div>
-    <div>
-      <h3>Léa SABAN <a href="https://www.linkedin.com/in/leasaban/"> <img src="Img/Linkdin.webp" alt=""></a>
-        <a href="https://github.com/lea-aa0"> <img src="Img/Github.png" alt=""></a>
-        <h3>
-
-          <h3>Morgane BRAHIM <a href="https://www.linkedin.com/in/morgane-brahim/"> <img src="Img/Linkdin.webp"
-                alt=""></a>
+    <div class="equipe">
+        <div class="equip-card">
+          <img class="pdpdp" src="Img/pdpJihan.jpg" alt="">
+          <h3>Lea <br>SABAN</h3> 
+          <div class="equip-links"><a href="https://www.linkedin.com/in/leasaban/"> <img src="Img/Linkdin.jpg" alt=""></a>
+            <a href="https://github.com/lea-aa0"> <img src="Img/Github.png" alt=""></a>
+          </div>
+        </div>
+        <div class="equip-card">
+          <img class="pdpdp" src="Img/pdprandom.jpg" alt="">
+          <h3>Morgane <br>BRAHIM</h3>
+          <div class="equip-links"><a href="https://www.linkedin.com/in/morgane-brahim/"> <img src="Img/Linkdin.jpg" alt=""></a>
             <a href="https://github.com/Achinis"> <img src="Img/Github.png" alt=""></a>
-          </h3>
-
-          <h3>Clairphane MEINARDT<a href=""> <img src="Img/Linkdin.webp" alt=""></a>
+          </div>
+        </div>
+        <div class="equip-card">
+          <img class="pdpdp" src="Img/pdpJihan.jpg" alt="">
+          <h3>Clairphane <br>MEINARDT</h3>
+          <div class="equip-links"><a href=""> <img src="Img/Linkdin.j" alt=""></a>
             <a href="https://github.com/Phanou973"> <img src="Img/Github.png" alt=""></a>
-          </h3>
-
-          <h3>Améline Lurton <a href="https://www.linkedin.com/in/ameline-lurton/"> <img src="Img/Linkdin.webp"
-                alt=""></a>
+          </div> 
+        </div>
+        <div class="equip-card">
+          <img class="pdpdp" src="Img/pdprandom.jpg" alt="">
+          <h3>Améline <br>LURTON</h3> 
+          <div class="equip-links"><a href="https://www.linkedin.com/in/ameline-lurton/"> <img src="Img/Linkdin.jpg" alt=""></a>
             <a href="https://github.com/Amelinelurton"> <img src="Img/Github.png" alt=""></a>
-          </h3>
-
-          <h3>Jihan DELIQUE <a href="https://www.linkedin.com/in/jihann-delique-3aa823350/"> <img src="Img/Linkdin.webp"
-                alt=""></a>
+          </div>
+        </div>
+        <div class="equip-card">  
+        <img class="pdpdp" src="Img/pdpJihan.jpg" alt="">
+        <h3>Jihan<br> DELIQUE</h3>
+        <div class="equip-links"><a href="https://www.linkedin.com/in/jihann-delique-3aa823350/"> <img src="Img/Linkdin.jpg" alt=""></a>
             <a href="https://github.com/Seraphyms"> <img src="Img/Github.png" alt=""></a>
-          </h3>
+        </div>
+      </div>
     </div>
+    <p id="thnks">Merci de nous avoir écouté !</p>
   </section>
 </body>
+    <footer>
+      <p>©2026 - Carely by Group 3</p>
+    </footer>
 
 </html>
