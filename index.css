@@ -39,8 +39,8 @@ nav {
     padding: 5px 4%;
     position: sticky;
     top:0; 
-    width: 93vw;
-    z-index: 100;
+    width: 90.9vw;
+    z-index: 50;
 }
 
 nav h2{
@@ -99,7 +99,7 @@ a img{
 /*HERO*/
 header {
   position: relative;
-  height: 100vh;
+  height: 94vh;
   overflow: hidden;
 }
 
@@ -125,9 +125,10 @@ header h2{
   display: flex;
   position: relative;
   z-index: 1;
+  margin: 0%;
   color: #382213;
   text-align: center;
-  top: 15%;
+  top: 5%;
   left:10%;
   gap: 150px;;
 }
@@ -164,10 +165,11 @@ header h2{
 
 
 /*section contexte*/
-
 #contexte{
     display: flex;
-    padding: 5%;
+    padding: 50px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     text-transform: uppercase;
     background: linear-gradient(
     180deg,
@@ -186,18 +188,19 @@ header h2{
   width: 60%;
   height: 1px;  
   background: black;
-  margin: 20px auto;
+  margin: 80px auto;
 }
 
 #textgauche{
     display: flex;
     align-items: center;
-    font-size: 150%;
+    font-size: 195%;
 }
 
 #textdroite{
     display: flex;
     flex-direction: column;
+    font-size: 160%;
 }
 
 
@@ -206,25 +209,20 @@ header h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-#IAs .totalcard{
-    background-color: rgba(105, 52, 0, 0.3);
+    align-items: center; 
+}    
+.card{
     padding: 50px;
-    height:85vh;
-    border-radius: 30px;
-}
-
-#IAs{
-    background-color: #f8e5d5;
+    height:50vh;
+    max-height:70vh;
+        background-color:#ffffff8c;
     height: 110vh;
 }
 
+
 #IAs h3{
-    padding: 0;
-    margin: 0%;
-    margin-bottom: 30px;
+   margin: 0%;
+    margin-bottom: 80px;
 }
 
 #IAs h2{
@@ -238,21 +236,20 @@ header h2{
 }
 
 .card{
-    background-color:#fff4ec;
-    border-radius: 20px;
+        border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
-    max-height: 100vh;
+    max-height: 60vh;
 }
 
-.Charlie img{
-     animation: rotateZen1 60s linear infinite;
+.charlie img{
+    animation: rotateZen1 60s linear infinite;
     will-change: transform;
 }
 
-.Iris img{
-     animation: rotateZen2 60s linear infinite;
-    will-change: transform;
+.iris img{
+    animation: rotateZen2 60s linear infinite;
+    will-change: transform; 
 }
 .card img{
     height: 220px;
@@ -290,16 +287,14 @@ header h2{
 
 /*Fonctionnalitées*/
 #Fonctionnalitées{
-    height: 100vh;
+    height: 220vh;
     background: linear-gradient(
      180deg,
      #f8e5d5 0%,
      #e8e6c8 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding:50px;
-    
+    padding-top: 100px;
+    gap: 100px;
 }
 
 #Fonctionnalitées h2{
@@ -309,11 +304,12 @@ header h2{
 
 #Fonctionnalitées div{
     background-color:rgba(255, 255, 255, 0.575);
-    padding:20px;
+    padding: 20px;
     border-radius: 30px;
-    width: 65vw ;
-    height: 70vh; /* ou la hauteur que tu veux */
-    
+    width: 60vw ;
+    height: 26vh; /* ou la hauteur que tu veux */
+    gap: 100px;
+    margin-top: 220px;
 }
 
 #Fonctionnalitées h3{
@@ -324,23 +320,29 @@ header h2{
     margin: 20px;
 }
 
-.center {
-    justify-self: center;
-    font-size: 4em;
-    background-color:#a1c575;
-    
-}
 
 .right {
     justify-self: right;
-    background-color:#c0e593;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .left {
+    
     justify-self: left;
-    background-color:#c0e593;
-    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+}
+
+
+#Fonctionnalitées img{
+    width: 200px;
+    height: 400px;
+}
+
+.ensemble{
+    display: flex;
+    align-items: center;
 }
 
 /*Témoignages*/
@@ -350,7 +352,40 @@ header h2{
   margin-top: 0;
   text-align: center;
   font-family: Chango;
+  padding-bottom: 40px;
 }
+
+.ia {
+  position: absolute;
+  z-index: 0;
+  border-radius: 500px;
+}
+
+.Iris{
+  left: 15%;
+  height: 300px;
+  width:300px;
+   animation: rotateZen2 60s linear infinite;
+    will-change: transform;
+}
+
+.Charlie{
+    height: 400px;
+    width:400px;
+    left: 50%;
+    z-index:1;
+         animation: rotateZen3 60s linear infinite;
+}
+
+@keyframes rotateZen3 {
+  from {
+    transform: translateY(-80%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-80%) rotate(360deg);
+  }
+}
+
 
 #Témoignages{
     height: 40vh;
@@ -358,6 +393,7 @@ header h2{
     180deg,
     #e8e6c8 0%,
     #cfe1b9 100%);
+    padding-top: 100px;
 }
 .carousel {
   position: relative;
@@ -365,6 +401,7 @@ header h2{
   margin: auto;
   text-align: center;
   overflow: hidden;
+  z-index: 5;
 }
 
 .slide {
@@ -388,7 +425,7 @@ header h2{
 .prev, .next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   background:#382213;
   color: white;
   border: none;
@@ -417,13 +454,13 @@ header h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 500px;
     margin-bottom: 30px;
     gap: 50px;
 }
 
 #Download img{
-    height: 80vh;
+    height: 85vh;
     width: auto;
 }
 
@@ -436,14 +473,25 @@ header h2{
     border-radius: 20px;
 }
 
+.ACHETE div{
+    display: flex;
+    gap: 10px;
+}
+
 #Download p{
     font-size: 1.3em;
 }
+
 
 #Download button{
     padding:10px;
     font-size: 1.2em; 
     color:white;
+}
+
+#Download .achetemoi{
+    width: 150px;
+    height: 50px;
 }
 /*Footer*/
 footer{
@@ -451,10 +499,30 @@ footer{
     background-color: #c0d3a8;
 }
 
+footer h1{
+    font-family: Chango;
+}
+
 footer p{
     margin: 0%;
     padding: 0%;
-    text-align: center;
+    font-size: larger;
+}
+
+footer img{
+    height:40px;
+    width:50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imageFooter{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 button{

@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -21,7 +23,7 @@
         <div id="DocEtTel">
           <p><a href="/doc.html">Documentation</a></p>
           <!--Lien pour github /p3-groupe3-carely/doc.html-->
-          <button><a href="https://www.figma.com/proto/hjIyraxqznZGkxGgZkD8dU/P3---Groupe-3?page-id=1%3A3&node-id=6093-2436&viewport=2322%2C-1048%2C0.43&t=F18wE2wpFf6AvCGF-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=6093%3A2458" target="_blank">
+          <button><a href="https://www.figma.com/proto/hjIyraxqznZGkxGgZkD8dU/P3---Groupe-3?node-id=6093-2003&t=KG1IedMO2ZBRKiE7-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=6093%3A2458" target="_blank">
             <p>Télécharger</p>
             </a></button>
         </div>
@@ -36,10 +38,10 @@
           Vidéo non disponible
         </iframe>
         <div class="content">
-          <img id="HeroPhone" src="Img/HeroPhone.png" alt="phonephone">
+          <img id="HeroPhone" src="/Maquette/EcranIAS.png" alt="phonephone">
           <div id="NameSlogant">
             <h1>CARELY</h1>
-            <h2>CONCUE POUR LES <br>CERVEAUX QUI VONT VITES</h2>
+            <h2>CONÇUE POUR LES <br>CERVEAUX QUI VONT VITES</h2>
             <div id="buttons">
               <button><a href="https://www.apple.com/fr/app-store/">
             <p>Télécharger</p><img src="/Img/PlayStore.png" alt="">
@@ -63,18 +65,13 @@
       </div>
       <div id="textdroite">
         <div class="paragraphecontextechiffre">
+          <p class="textimportant"><b>5,3 % </b></p>
+          <p>des étudiants présentent des niveaux élevés de symptômes du TDAH selon un outil standardisé. </p>
+        </div>
+        <div class="ligne"></div>
+        <div class="paragraphecontextechiffre">
           <p class="textimportant"><b>2 000</b></p>
-          <p>Accompagnants d’élèves en situation de handicap (AESH) supplémentaires </p>
-        </div>
-        <div class="ligne"></div>
-        <div class="paragraphecontextechiffre">
-          <p class="textimportant"><b>480 000</b></p>
-          <p>Livrets de parcours inclusif ouverts Troubles : Psy/dys/Devellopement Moteur </p>
-        </div>
-        <div class="ligne"></div>
-        <div class="paragraphecontextechiffre">
-          <p class="textimportant"><b>24 %</b></p>
-          <p>De la population âgée de plus de 16 ans présentait une forme de handicap, soit environ 107 millions de personnes</p>
+          <p> Accompagnants d’élèves en situation de handicap (AESH) supplémentaires. </p>
         </div>
       </div>
     </section>
@@ -82,18 +79,18 @@
     
 
     <section id="IAs">
-    <div class="totalcard ia">
+    <div class="totalcard">
       <h2>Nos Compagnons</h2>
       <h3>Des présences pensées pour t’accompagner avec douceur</h3>
       <div id="card-container">
-        <div class="card Charlie">
+        <div class="card charlie">
           <img src="Img/Charlie.png" alt="">
           <div class="text">
             <h3>Charlie</h3>
             <p>Amical.e et gai.e</p>
           </div>
         </div>
-        <div class="card Iris">
+        <div class="card iris">
           <img src="Img/Iris.png" alt="">
           <div class="text">
             <h3>Iris</h3>
@@ -107,20 +104,20 @@
 
 
     <section id="Fonctionnalitées">
-      <h2>Nos Fonctionnalitées</h2>
-      <div>
-        <h3 class="center"> ☁︎ Votre Carely vous accompagne ☁︎</h3>
-        <h3 class="right">Apprenez en toute simplicité ⮐</h3>
-        <h3 class="left">⮑ Detendez-vous avec nous</h3>
-        <h3 class="right">Testez-vous sur vos cours ! ⮐</h3>
-      </div>
+      <h2>Nos Fonctionnalités</h2>
+        <script>
+       AOS.init();
+      </script>
+        <div class="ensemble right" data-aos="fade-right"><img src="Maquette/MenuCours.png" alt="Cours"><h3 class="right">Apprenez en toute simplicité </h3></div>
+        <div class="ensemble left" data-aos="fade-left"><h3> Détendez-vous avec nous</h3><img src="Maquette/MenuZen.png" alt="Zen"></div>
+        <div class="ensemble right " data-aos="fade-right"><img src="Maquette/MenuQuiz.png" alt="Quiz"><h3 class="right">Testez-vous sur vos cours ! </h3></div>
     </section>
 
 
 
     <section id="Témoignages">
       <h2>Avis Clients</h2>
-      
+      <img src="/Img/Iris.png" class=" ia Iris" alt="">
       <div class="carousel">
         <!-- Avis -->
         <div class="slide">
@@ -128,7 +125,7 @@
           <h3>Camille</h3>
           <h4>Etudiante en psychologie<h4>
           <div class="stars">★★★★★</div>
-          <p>"Enfin une appli qui comprend mes défis ! Le mode ‘urgence’ m’a sauvée avant un exposé. Simple, visuel, efficace. Je recommande à 100 %."</p>
+          <p>"Enfin une appli qui comprend mes défis ! Le mode zen m’a sauvée avant un exposé. Simple, visuel, efficace. Je recommande à 100 %."</p>
         </div>
         <div class="slide">
           <img class ="pdp" src="Img/portrait_avis/CutieBoyù.jpg" alt="Thomaslyceén">
@@ -142,28 +139,34 @@
           <h3>Lisa</h3>
           <h4>Etudiante en droit</h4>
           <div class="stars">★★★★★</div>
-          <p>"J’avais testé plein d’apps, toutes trop complexes. Celle-ci est pensée pour nous : routines guidées, sons anti-anxiété, et un vrai suivi des habitudes. Je progresse sans culpabilité. Enfin un outil qui m’accompagne, pas qui me juge."</p>
+          <p>"J’avais testé plein d’apps, toutes trop complexes. Celle-ci est pensée pour nous : routines guidées, sons anti-anxiété, et un vrai suivi des habitudes. Je progresse sans difficulté. Enfin un outil qui m’accompagne, pas qui me juge."</p>
         </div>
 
         <!-- Flèches -->
         <button class="prev">❮</button>
         <button class="next">❯</button>
       </div>   
+      <img src="/Img/Charlie.png" class="ia Charlie" alt="">
 
     </section>
 
 
     <section id="Download">
-      <img src="Img/HeroPhone.png" alt="">
+      <img src="Maquette/DoubleScreen.png" alt="">
       <div class="ACHETE">
-        <p>Téléchargez dès maintenant, et revoyez l'école sous un nouveau jour.</p>
+        <p><b>Téléchargez</b> dès maintenant, et découvrez
+          l'apprentissage sous un nouveau jour.</p>
         <div>
-          <button>Télécharger</button>
+          <a href="#"><img class="achetemoi" src="Img/GOOGLEPLAY.png" alt="Googlez"></a>
+          <a href="#"><img class="achetemoi"src="Img/LAPPSTORE.png" alt="apppl"></a>
         </div>
       </div>
     </section>
     <footer>
-      <p>©2026 - Carely by Group 3</p>
+      <div class="logo"><img src="/Img/logoCarely.png" alt="logo de Carely, un papillon brun bicolore"><h1>Carely</h1></div>
+      <p>Nous Contacter <br> ©2026 - Carely by Groupe 3</p>
+      <div class="imageFooter">
+      </div>
     </footer>
   </body>
       <script src="script.js" type="text/javascript"></script>

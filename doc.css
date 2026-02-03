@@ -206,6 +206,7 @@ a img{
     box-shadow: 0 15px 40px rgba(60, 90, 70, 0.08);
     backdrop-filter: blur(6px);
     display: flex;
+    font-size: 1.2em;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -213,7 +214,7 @@ a img{
 
 .besoin-tag {
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color:#382213;
@@ -234,12 +235,9 @@ a img{
 
 #wireframe div{
     display: flex;
-    gap:200px;
-}
-
-#wireframe div:last-child{
-    display: flex;
-    gap:100px;
+    flex-direction: row;
+    gap:50px;
+    padding:50px;
 }
 
 #wireframe h1{
@@ -255,6 +253,12 @@ a img{
 }
 
 /*avenir*/
+#avenir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
 #avenir h1{
     font-family: chango;
 }
@@ -308,19 +312,37 @@ a img{
     border-radius: 400px;
 }
 
-#thnks{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
 
+/* footer*/
 footer{
-    justify-content: center;
-    display: flex;
+    padding: 8px;
+    background-color:#ae8e79;
 }
 
 
+footer h1{
+    font-family: Chango;
+}
 
+footer p{
+    margin: 0%;
+    padding: 0%;
+    font-size: larger;
+}
 
+footer img{
+    height:40px;
+    width:50px;
+}
 
-/* /p3.html
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imageFooter{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+ 
