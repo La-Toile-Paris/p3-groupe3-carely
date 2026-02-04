@@ -28,19 +28,17 @@ body {
     background-color: #cfe1b9;
 
 }
-
-/*NAV*/
 nav {
     display: flex;
     font-family: Chango;
     align-content: center;
     justify-content: space-between;
     background-color: white;
-    padding: 5px 4%;
+    padding: 5px 3%;
     position: sticky;
     top:0; 
-    width: 90.9vw;
-    z-index: 50;
+    width: 93vw;
+    z-index: 100;
 }
 
 nav h2{
@@ -53,7 +51,6 @@ nav img{
     height:50px;
     width:60px;
 }
-
 #DocEtTel p{
     font-family:Kameron;
     font-size: 1.3em;
@@ -65,7 +62,7 @@ nav img{
     display: flex;
     gap:10px;
     align-items: center;
-}  
+}
 
 button{
     background-color: #382213;
@@ -210,13 +207,18 @@ header h2{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-}    
+}
+
+#IAs{
+    background-color: #f8e5d5;
+}
 .card{
     padding: 50px;
     height:50vh;
     max-height:70vh;
-        background-color:#ffffff8c;
+    background-color:#ffffff8c;
     height: 110vh;
+    width: 50vh;
 }
 
 
@@ -228,6 +230,7 @@ header h2{
 #IAs h2{
     margin-bottom: 0px;
     font-weight: lighter;
+    margin-top: 60px;
     font-family: Chango;
 }
 #card-container{
@@ -255,6 +258,8 @@ header h2{
     height: 220px;
     border-radius: 500px;
     margin-bottom: 20px;
+    position: relative; /* ou absolute si tu veux le positionner librement */
+    z-index:2000;
 }
 
 .card h3{

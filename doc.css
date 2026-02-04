@@ -4,13 +4,25 @@ a {
     color: #382213;
 }
 
-body {
-    margin:0;
+html, body {
+    margin: 0;
     padding: 0;
+}
+
+body {
+    min-height: 100vh;
     font-family: Kameron;
     color: #382213;
-    background-color: rgba(105, 52, 0, 0.3);
     overflow-x: hidden;
+
+    background: linear-gradient(
+        180deg,
+        #cfe1b9 0%,
+        #e1e8c8 30%,
+        #f8e5d5 100%
+
+    );
+    background-attachment: fixed;
 }
 
 nav {
@@ -19,7 +31,7 @@ nav {
     align-content: center;
     justify-content: space-between;
     background-color: white;
-    padding: 5px 4%;
+    padding: 5px 3%;
     position: sticky;
     top:0; 
     width: 93vw;
@@ -103,9 +115,23 @@ a img{
     align-items: center;
 }
 
+
+#raison{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#sujet{
+    width: 1000px;    
+}
+
 #pourquoi{
     font-size: x-large;
     font-family: Chango;
+}
+
+#pourquoi h2{
+    margin-bottom: 70px;
 }
 
 #raison{
@@ -115,7 +141,9 @@ a img{
 }
 
 #sujet p{
-    font-size: large;
+    font-size: x-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .titre{
@@ -131,6 +159,8 @@ a img{
 
 #personna h1{
     font-family: Chango;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .text {
@@ -149,7 +179,8 @@ a img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: rgba(238, 220, 220, 0.763);
+    background-image: url(Img/background3.jpg);
     width : 80vw;
     height :20%;
     border-radius: 20px;
@@ -157,6 +188,7 @@ a img{
     padding: 40px;
     padding-right: 80px;
     margin-bottom: 30px;
+    background-repeat: no-repeat;
 }
 
 .card-perso img{
@@ -167,6 +199,7 @@ a img{
 #Container-card-perso h3{
     font-weight: bolder;
     margin-top: 0;
+    margin-bottom: 100px;
     font-size: 2.1em;
 }
 .card-perso h3{
@@ -212,6 +245,7 @@ a img{
     gap: 20px;
 }
 
+
 .besoin-tag {
     font-weight: bolder;
     font-size: 1.3em;
@@ -222,6 +256,7 @@ a img{
 
 .besoin-card p {
     font-size: 1.05em;
+    text-align: center;
     line-height: 1.6;
     color: #382213;
 }
@@ -259,33 +294,82 @@ a img{
     align-items: center;
     margin: 50px;
 }
+
 #avenir h1{
     font-family: chango;
 }
 
-#avenir p {
-    font-size: large;
+
+#avenir li {
+    font-size: 30px;
+}
+
+#Iris{
+  position: absolute;
+  z-index: 0;
+  border-radius: 500px;
+    left: 5%;
+  height: 250px;
+  width:250px;
+   animation: rotateZen2 60s linear infinite;
+    will-change: transform;
+    z-index:-1;
+}
+
+#Charlie{
+    position: absolute;
+  z-index: 0;
+  border-radius: 500px;
+    left: 75%;
+  height: 250px;
+  width:250px;
+   animation: rotateZen3 60s linear infinite;
+    will-change: transform;
+    z-index:-1;
+}
+
+@keyframes rotateZen3 {
+  from {
+    transform: translateY(-30%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-30%) rotate(360deg);
+  }
 }
 
 
-#raison{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-#sujet{
-    width: 1000px;    
+
+@keyframes rotateZen2 {
+  from {
+    transform: translateY(30%) rotate(0deg);
+  }
+  to {
+    transform: translateY(30%) rotate(360deg);
+  }
 }
 
 /*equipe*/
+
+#equipe{
+    text-align: center;
+}
+
 .equipe {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+#nous{
+    height:400px;
+    border-radius: 50px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    position: relative; /* ou absolute si tu veux le positionner librement */
+    z-index:2000;
+}
+
 .equip-card{
-    background-color: #ffffff;
+    background-color: #d9e5c2;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -293,6 +377,7 @@ a img{
     margin: 30px;
     border-radius: 20px;
     width: 12%;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
 }
 
 .equip-links{
@@ -316,7 +401,7 @@ a img{
 /* footer*/
 footer{
     padding: 8px;
-    background-color:#ae8e79;
+    background-color:#e4cfbc;
 }
 
 
