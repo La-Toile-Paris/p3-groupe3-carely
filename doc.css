@@ -179,8 +179,7 @@ a img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgba(238, 220, 220, 0.763);
-    background-image: url(Img/background3.jpg);
+    background-color: rgb(131 168 126);
     width : 80vw;
     height :20%;
     border-radius: 20px;
@@ -292,11 +291,12 @@ a img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    margin: 150px;
 }
 
 #avenir h1{
     font-family: chango;
+    margin-bottom: 70px;
 }
 
 
@@ -390,6 +390,7 @@ a img{
     font-family: Chango;
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 
 #equipe .pdpdp{
